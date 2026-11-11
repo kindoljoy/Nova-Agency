@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="60" fill="#262626"/>
+  <circle cx="60" cy="48" r="24" fill="#10B981" fill-opacity="0.3" stroke="#10B981" stroke-width="2"/>
+  <path d="M 24 104 C 24 82, 40 76, 60 76 C 80 76, 96 82, 96 104" fill="#333333"/>
+  <text x="60" y="54" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" fill="#F5F3EF" text-anchor="middle">DC</text>
+</svg>

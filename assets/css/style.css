@@ -1,0 +1,186 @@
+/**
+ * NOVA Creative Digital Agency
+ * Core Stylesheet & Editorial Theme Tokens
+ */
+
+:root {
+  --color-black: #111111;
+  --color-surface: #171717;
+  --color-charcoal: #262626;
+  --color-border: #303030;
+  --color-offwhite: #F5F3EF;
+  --color-accent: #FF5A1F;
+  --color-accent-hover: #E04B14;
+  --color-gray: #777777;
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-black);
+  color: var(--color-offwhite);
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-offwhite);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utility Classes */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A1F;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent);
+  color: #111111;
+}
+
+/* Glow effects & Accents */
+.glow-accent {
+  box-shadow: 0 0 35px -5px rgba(255, 90, 31, 0.35);
+}
+
+.glow-subtle {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #B8B8B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(135deg, #FF5A1F 0%, #FF8D3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Noise texture overlay for editorial tactile feel */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Button & Interactive styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent);
+  color: #111111;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--color-accent);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+  box-shadow: 0 0 25px rgba(255, 90, 31, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-offwhite);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(245, 243, 239, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-offwhite);
+  background-color: rgba(245, 243, 239, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Card Transitions */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 90, 31, 0.5);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9);
+}
+
+/* Custom form inputs */
+.form-input {
+  width: 100%;
+  background-color: #171717;
+  border: 1px solid #333333;
+  color: #F5F3EF;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #FF5A1F;
+  box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.2);
+}
+
+.form-input::placeholder {
+  color: #555555;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

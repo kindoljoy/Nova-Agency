@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" fill="none">
+  <rect width="1000" height="600" fill="#141414"/>
+  <rect x="40" y="40" width="920" height="520" stroke="#2A2A2A" stroke-width="2"/>
+  <text x="80" y="240" font-family="'Space Grotesk', sans-serif" font-size="64" font-weight="900" fill="#F5F3EF">RADICAL</text>
+  <text x="80" y="320" font-family="'Space Grotesk', sans-serif" font-size="64" font-weight="900" fill="#FF5A1F">CHARACTER</text>
+  <text x="80" y="400" font-family="'Space Grotesk', sans-serif" font-size="64" font-weight="900" fill="#F5F3EF">WINS 2027.</text>
+  <line x1="80" y1="440" x2="400" y2="440" stroke="#FF5A1F" stroke-width="3"/>
+  <text x="80" y="480" font-family="'Space Mono', monospace" font-size="14" fill="#777777">INSIGHTS // ESSAY BY ALEX NOVA</text>
+  <!-- Decorative typography circle -->
+  <circle cx="750" cy="300" r="140" stroke="#333333" stroke-width="1"/>
+  <circle cx="750" cy="300" r="110" stroke="#FF5A1F" stroke-width="2" stroke-dasharray="10 20"/>
+  <text x="750" y="310" font-family="'Space Mono', monospace" font-size="16" fill="#F5F3EF" text-anchor="middle">TYPOGRAPHY</text>
+</svg>
